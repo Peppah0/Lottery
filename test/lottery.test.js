@@ -19,10 +19,12 @@ from: accounts[0],
 gas:'1000000'
 });
 
-//console.log(accounts);
+console.log(accounts);
 });
 describe('Lottery',() => {
 it('deploys a lottery contract', () => {
+    //console.log(accounts);
+    console.log("contract address:  "+ lottery.options.address);
 assert.ok(lottery.options.address);
 });
 
